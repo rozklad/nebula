@@ -1,0 +1,143 @@
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+@import 'variables';
+
+/*------------------------------------*\
+  #LIBRARIES
+\*------------------------------------*/
+@import 'pace';
+
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+// Jumping scrollbar fix
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Roboto';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $text-color;
+}
+
+/*------------------------------------*\
+  #STRUCTURE
+\*------------------------------------*/
+.cols {
+  display: flex;
+
+  & > * {
+    flex: 1;
+  }
+}
+
+.aligned {
+  align-items: center;
+}
+
+.aligned--start {
+  align-items: flex-start;
+}
+
+.aligned--end {
+  align-items: flex-end;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.padded {
+  padding: $padding;
+}
+
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
+h1, h2 {
+  font-weight: normal;
+}
+
+a {
+  color: $brand-color;
+}
+
+.brand-color {
+  color: $brand-color;
+}
+
+.strong {
+  font-weight: 700;
+}
+
+/*------------------------------------*\
+  #LISTS
+\*------------------------------------*/
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+.nav {
+
+  &, a {
+    color: $interface-color;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $brand-color;
+  }
+}
+
+/*------------------------------------*\
+  #TRANSITIONS
+\*------------------------------------*/
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}

@@ -1,0 +1,20 @@
+{
+  "asset" : "Asset",
+  "rundown" : "Rundown",
+  "scheduler" : "Scheduler",
+  "jobs" : "Jobs",
+  "reports" : "Reports",
+  "system" : {
+    "name" : "System",
+    "children" : {
+      "services": "Services",
+      "views": "Views",
+      "actions": "Actions",
+      "folders": "Folders",
+      "channels": "Channels",
+      "storages": "Storages",
+      "settings": "Settings",
+      "users": "Users"
+    }
+  }
+}
